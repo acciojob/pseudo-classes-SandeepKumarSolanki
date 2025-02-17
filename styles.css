@@ -1,43 +1,48 @@
 /*  your css code here. If applicable */
-:root{
-	background-color : rgb(135, 206, 235)
+:root {
+    background-color: rgb(135, 206, 235);
 }
 
-p:first-child{
-	background-color : black;
-	color : white;
+/* Article paragraphs styling */
+article p:first-child {
+    color: white;
+    background-color: black;
 }
 
-p:nth-child(2){
-	color : black;
-}
-p:last-child{
-	color : red;
+article p:nth-child(2) {
+    color: black;
 }
 
-ol{
+article p:last-child {
+    color: red;
+}
+
+ul{
+	list-style-type : none;
+	background : 0;
+}
+
+ul  li{
 	background-color : gray;
-}
-
-ol:nth-child(odd){
-	background-color : white;
-}
-li{
-	width : 50%;
+	width : 50 %;
 	padding : 10px;
 }
 
-li:first-child{
-	font-size : 22px;
-}
-li:last-child {
-	font-size : 22px;
+ul li:nth-child(odd){
+	background-color : white;
 }
 
-li: nth-last-of-type(3){
-	background-color : pink;
+
+/* First and last list items with font size 22px */
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
 }
 
+/* Third-to-last list item with pink background */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
 
 
 
